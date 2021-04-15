@@ -2,6 +2,7 @@ enum Flavor {
   DEVELOPMENT,
   STAGE,
   PROD,
+  CASTLE,
 }
 
 class Config {
@@ -13,6 +14,8 @@ class Config {
         return 'PROD';
       case Flavor.STAGE:
         return 'STAGE';
+      case Flavor.CASTLE:
+        return 'CASTLE';
       case Flavor.DEVELOPMENT:
       default:
         return 'DEVELOPMENT';
