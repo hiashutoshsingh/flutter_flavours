@@ -51,30 +51,30 @@ android {
     }
 
 
-    flavorDimensions "app"
+    flavorDimensions "flavour"
 
     productFlavors {
         dev {
-            dimension "app"
-            resValue "string", "app_name", "DevFlavor"
+            dimension "flavour"
+            resValue "string", "app_name", "Dev"
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
         }
         stage {
-            dimension "app"
-            resValue "string", "app_name", "StageFlavor"
+            dimension "flavour"
+            resValue "string", "app_name", "Stage"
             applicationIdSuffix ".stage"
             versionNameSuffix "-stage"
         }
         castle {
-            dimension "app"
-            resValue "string", "app_name", "CastleConnolly"
-            applicationId "com.castle.conolly"
+            dimension "flavour"
+            resValue "string", "app_name", "Castle"
+            applicationId "com.castle.us"
             versionNameSuffix "-castle"
         }
         prod {
-            dimension "app"
-            resValue "string", "app_name", "ProdFlavor"
+            dimension "flavour"
+            resValue "string", "app_name", "Prod"
         }
     }
 }

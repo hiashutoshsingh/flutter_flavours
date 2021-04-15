@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:339585209489:android:2286c05e8727d25ec51b30",
+        "mobilesdk_app_id": "1:339585209489:android:7de03d81e332ed37c51b30",
         "android_client_info": {
-          "package_name": "com.castle.conolly"
+          "package_name": "com.castle.us"
         }
       },
       "oauth_client": [
