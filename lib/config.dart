@@ -9,6 +9,7 @@ class Config {
   static Flavor appFlavor;
 
   static String get message {
+    print('appFlavor $appFlavor');
     switch (appFlavor) {
       case Flavor.PROD:
         return 'PROD';
@@ -16,7 +17,6 @@ class Config {
         return 'STAGE';
       case Flavor.CASTLE:
         return 'CASTLE';
-      case Flavor.DEVELOPMENT:
       default:
         return 'DEVELOPMENT';
     }
