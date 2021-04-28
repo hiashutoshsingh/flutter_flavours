@@ -1,0 +1,5 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-castle.xcconfig"
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=/Users/i0868/Documents/projects/flutter_flavours/lib/main_castle.dart
+bundle_suffix=.castle
