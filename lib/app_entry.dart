@@ -71,7 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              _bundledId,
+              _bundledId + '\n' + Config.appFlavor.toString(),
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,
               ),
