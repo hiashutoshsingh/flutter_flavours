@@ -2,4 +2,3 @@
 #include "Generated.xcconfig"
 
 FLUTTER_TARGET=lib/main_stage.dart
-bundle_suffix=.stage
