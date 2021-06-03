@@ -3,9 +3,7 @@ import 'package:flavour/config.dart';
 import 'package:flavour/push_notifications.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+import 'home.dart';
 
 class MyApp extends StatefulWidget {
   @override
@@ -16,6 +14,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    print('initState ' + Config.message);
     init();
   }
 
@@ -32,37 +31,6 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    print('init');
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              Config.message,
-            ),
-          ],
-        ),
-      ),
     );
   }
 }

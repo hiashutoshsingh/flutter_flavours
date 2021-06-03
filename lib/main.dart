@@ -5,5 +5,6 @@ import 'app_entry.dart';
 
 void main() {
   Config.appFlavor = Flavor.PROD;
+  print('PROD');
   runApp(new MyApp());
 }
